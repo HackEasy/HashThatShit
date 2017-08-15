@@ -4,9 +4,9 @@
 #The Chaos I Bring, Youll Never Forget My Name
 #The Troubles, The Pain, The Panic, The Fear
 #We're Not Santa, But We Will Be Around All Year
+from termcolor import colored
 
-
-print """
+print colored("""
 	 
                          _.---.                           
                        .' :.--."-.                        
@@ -58,20 +58,20 @@ _  \     ;     ;          :_.'.'          \    ;
     "-.        ""---..__;-.     \      `.     . ; .'  .-" 
        ""--..            "-;     ;    .-"""    """   /    
              "-.            `.   :           `-.___.'   
-"""
+""","red")
 
 
-print "[+] C0d3d By Th3 M4d Sc13nT15t & Th3 M4d Ch3m15t "
+print colored ("[+] C0d3d By Th3 M4d Sc13nT15t & Th3 M4d Ch3m15t ","blue")
 
 
 import re
 import hashlib
 
-key_string = raw_input( "Enter What You Would Like To Hide With An MD5 Hash " )
+key_string = raw_input( "Enter What You Would Like To Hide With An MD5 Hash ", )
 
 input_str = raw_input("Could Your Provide A Little Info?: ")
 
-print"""
+print colored("""
                          .\   / _\   .\          >> Your Hash <<                
                         /_ \   ||   / _\     >> Has Been Generated <<                                
                          ||    ||    ||
@@ -96,8 +96,7 @@ print"""
                   \ | /        ||                         '--'
                    |'|  mx     'J  >>> Th3 M4d Sc13nT15t & M4d Ch3m15t <<<
                 .-.|||.-.                  >>> Made Me Do It <<<
-"""
-print "Your Generated Input Has Been Hashed:", input_str
+""","blue")
+print colored ("Your Generated Input Has Been Hashed:","white"), input_str
 print hashlib.md5( key_string ).hexdigest()
-
 
